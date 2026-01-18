@@ -1,0 +1,68 @@
+/* --- Reset simple --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Style général --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* --- Titre principal --- */
+#titre-stages {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* --- Image du stage --- */
+.logo-stage {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 300px;
+    height: auto;
+}
+
+/* --- Conteneur principal --- */
+.container-stage {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --- Bloc d'informations --- */
+.bloc-info,
+.bloc-apprentissages {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* --- Titres secondaires --- */
+.titre-stage {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.titre-apprentissages {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* --- Liste --- */
+.bloc-apprentissages ul {
+    padding-left: 20px;
+}
+
+.bloc-apprentissages li {
+    margin-bottom: 8px;
+}

@@ -17,7 +17,6 @@ const captions =
     {title: "Animations/Films/Manga", desc: "J'apprécie énormément tous ces médias, mais je préfère tout de même du contenu fait en animation 2D/3D, comme par exemple les films Dragon, Hazbin Hotel, etc."},
 ];
 
-
 function updateCaption() {
   if (!slides.length || !captionEl) return;
   const c = captions[index] || {};
@@ -26,7 +25,6 @@ function updateCaption() {
     <p>${c.desc ?? ""}</p>
   `;
 }
-
 
 function updateCarousel() {
   track.style.transform = `translateX(-${index * slideWidth}%)`;
