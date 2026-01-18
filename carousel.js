@@ -11,10 +11,10 @@ let autoPlayInterval;
 
 const captions =
 [
-    {title: "Jeux vidéos", desc: "Depuis tout petit, j'ai toujours aimé jouer aux jeux vidéos, que ce soit sur console ou sur PC. Mes style de jeux préférés sont les FPS/TPS, les jeux de stratégie et les jeux d'horreurs."},
-    {title: "Musique", desc: "J'aime tout style de musique en ayant tout de même une préférence pour la pop et un grand écœurement pour le Rap français. La photo se trouvant représente ma chanteuse préférée se prénommant Ado."},
-    {title: "L'histoire", desc: "Je possède une passion pour découvrir l'histoire d'à peu près chaque partie du monde et chaque période. Mes périodes préférées a été sont les deux premières guerres mondiales, les guerres napoléoniennes et les mythologies grecques et égyptiennes."},
-    {title: "Animations/Films/Manga", desc: "J'apprécie énormément tous ces médias, mais je préfère tout de même du contenu fais en animation 2D/3D, comme exemples les films Dragon et etc.   "},
+    {title: "Jeux vidéos", desc: "Depuis tout petit, j'ai toujours aimé jouer aux jeux vidéo, que ce soit sur console ou sur PC. Mes styles de jeux préférés sont les FPS/TPS, les jeux de stratégie et les jeux d'horreur."},
+    {title: "Musique", desc: "J'aime tout style de musique en ayant tout de même une préférence pour la pop et un grand écœurement pour le rap français. La photo se trouvant juste au-dessus représente ma chanteuse préférée se prénommant Ado."},
+    {title: "L'histoire", desc: "Je possède une passion pour découvrir l'histoire d'à peu près chaque partie du monde et chaque période. Mes périodes préférées sont les deux premières guerres mondiales, les guerres napoléoniennes et les mythologies grecques et égyptiennes."},
+    {title: "Animations/Films/Manga", desc: "J'apprécie énormément tous ces médias, mais je préfère tout de même du contenu fait en animation 2D/3D, comme par exemple les films Dragon, Hazbin Hotel, etc."},
 ];
 
 
