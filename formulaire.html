@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact</title>
+    <link rel="stylesheet" href="formulaire.css">
+    <link rel="stylesheet" href="iframe.css">
+</head>
+<body>
+    <iframe src="header.html"></iframe>
+
+    <div class="contact-container">
+        <h1>Formulaire de Contact</h1>
+        <form action="https://formsubmit.co/esteban.drouet@etu.univ-smb.fr" method="POST" id="contactForm">
+            <div class="form-group">
+                <label for="name">Nom *</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="votre.email@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Sujet *</label>
+                <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required placeholder="Votre message..."></textarea>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="index.html">
+
+            <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('contactForm');
+    </script>
+</body>
+</html>
