@@ -7,12 +7,14 @@ const captionEl = document.getElementById("carousel-caption");
 
 let index = 0;
 let slideWidth = 0;
+let autoPlayInterval;
 
 const captions =
 [
-    {title: "Ado1", desc: "Ado1descr"},
-    {title: "Ado2", desc: "Ado2descr"},
-    {title: "L'histoire", desc: "Je possède une passion pour découvrir l'histoire d'à peu près chaque partie du monde et chaque période."}
+    {title: "Jeux vidéos", desc: "Depuis tout petit, j'ai toujours aimé jouer aux jeux vidéos, que ce soit sur console ou sur PC. Mes style de jeux préférés sont les FPS/TPS, les jeux de stratégie et les jeux d'horreurs."},
+    {title: "Musique", desc: "J'aime tout style de musique en ayant tout de même une préférence pour la pop et un grand écœurement pour le Rap français. La photo se trouvant représente ma chanteuse préférée se prénommant Ado."},
+    {title: "L'histoire", desc: "Je possède une passion pour découvrir l'histoire d'à peu près chaque partie du monde et chaque période. Mes périodes préférées a été sont les deux premières guerres mondiales, les guerres napoléoniennes et les mythologies grecques et égyptiennes."},
+    {title: "Animations/Films/Manga", desc: "J'apprécie énormément tous ces médias, mais je préfère tout de même du contenu fais en animation 2D/3D, comme exemples les films Dragon et etc.   "},
 ];
 
 
@@ -31,6 +33,14 @@ function updateCarousel() {
   updateCaption();
 }
 
+function startAutoPlay() {
+  clearInterval(autoPlayInterval);
+  autoPlayInterval = setInterval(() => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+  }, 7000);
+}
+
 if (track && slides.length && nextBtn && prevBtn) {
   // Définir la largeur du track et de chaque slide
   slideWidth = 100 / slides.length;
@@ -43,18 +53,16 @@ if (track && slides.length && nextBtn && prevBtn) {
   nextBtn.addEventListener("click", () => {
     index = (index + 1) % slides.length;
     updateCarousel();
-clearInterval(int)
+    startAutoPlay();
   });
 
   prevBtn.addEventListener("click", () => {
     index = (index - 1 + slides.length) % slides.length;
     updateCarousel();
+    startAutoPlay();
   });
 
-  setInterval(() => {
-    index = (index + 1) % slides.length;
-    updateCarousel();
-  }, 5000);
+  startAutoPlay();
 }
 
 updateCarousel();

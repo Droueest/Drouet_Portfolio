@@ -1,0 +1,245 @@
+/* Formation Page Styles */
+
+#formation-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#formation-container > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#formation-container > h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    border-radius: 2px;
+}
+
+/* Timeline & Cards */
+.formation-card {
+    display: flex;
+    margin-bottom: 60px;
+    position: relative;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formation-timeline {
+    position: relative;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 4px #4CAF50;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-line {
+    width: 4px;
+    height: 300px;
+    background: linear-gradient(180deg, #4CAF50, transparent);
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.formation-card:last-child .timeline-line {
+    display: none;
+}
+
+.formation-content {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+.formation-content:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.formation-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.formation-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formation-date {
+    font-size: 1.3rem;
+    color: #4CAF50;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.formation-title {
+    font-size: 1.6rem;
+    color: #333;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.formation-school {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 15px 0;
+    font-style: italic;
+}
+
+.formation-speciality,
+.formation-mention {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 8px 0;
+}
+
+.formation-details {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.formation-details > p {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.courses-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.courses-list li {
+    padding: 8px 0 8px 20px;
+    color: #555;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.courses-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 5px;
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #formation-container > h1 {
+        font-size: 2rem;
+    }
+
+    .formation-card {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .formation-timeline {
+        width: auto;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .timeline-dot {
+        margin-right: 20px;
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .formation-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .formation-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .formation-date {
+        font-size: 1.1rem;
+    }
+
+    .formation-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #formation-container {
+        padding: 0 15px;
+    }
+
+    #formation-container > h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .formation-content {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .formation-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .formation-title {
+        font-size: 1.1rem;
+    }
+}

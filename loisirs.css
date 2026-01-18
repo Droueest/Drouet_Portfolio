@@ -1,0 +1,115 @@
+/* Loisirs Page Styles */
+
+#loisirs-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#loisirs-container > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#loisirs-container > h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    border-radius: 2px;
+}
+
+.carousel-wrapper {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #loisirs-container > h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .carousel-track {
+        height: 350px !important;
+    }
+
+    .carousel-item {
+        height: 350px !important;
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
+
+    .carousel-btn {
+        padding: 12px 16px;
+        font-size: 24px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #loisirs-container {
+        padding: 0 15px;
+    }
+
+    #loisirs-container > h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .carousel-track {
+        height: 250px !important;
+    }
+
+    .carousel-item {
+        height: 250px !important;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .carousel-btn {
+        padding: 10px 12px;
+        font-size: 20px;
+    }
+
+    .carousel-caption {
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.1rem;
+    }
+}

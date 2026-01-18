@@ -1,11 +1,12 @@
 .carousel
 {
     position:relative;
-    width: 80%;
-    max-width: 100%;
-    margin: 50px auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-track
@@ -14,20 +15,27 @@
     transition: transform 0.5s ease;
     will-change: transform;
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 
 .carousel-item
 {
     flex-shrink: 0;
-    height: 400px;
+    height: 450px;
+    overflow: hidden;
 }
 .carousel-item img
 {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover img
+{
+    transform: scale(1.02);
 }
 
 .carousel-btn
@@ -35,35 +43,54 @@
     position:absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: black; 
+    background-color: rgba(76, 175, 80, 0.8);
     color: white;
     border:none;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 28px;
+    padding: 15px 20px;
     cursor: pointer;
     z-index: 10;
-}
-
-.prev
-{
-    left: 10px;
-}
-.next
-{
-    right: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
 .carousel-btn:hover
 {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(76, 175, 80, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev
+{
+    left: 20px;
+}
+.next
+{
+    right: 20px;
 }
 
 .carousel-caption {
-  width: 80%;
-  max-width: 1000px;
-  margin: 12px auto 0;
+  width: 100%;
+  max-width: 900px;
+  margin: 25px auto 0;
+  padding: 20px;
   color: #333;
-  font-size: 0.95rem;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.6;
   text-align: center;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05));
+  border-radius: 10px;
+  border-left: 4px solid #4CAF50;
+}
+
+.carousel-caption h2 {
+  margin: 0 0 10px 0;
+  color: #4CAF50;
+  font-size: 1.4rem;
+}
+
+.carousel-caption p {
+  margin: 0;
+  color: #555;
 }

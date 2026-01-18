@@ -1,29 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-portfolio</title>
+    <title>Formation - E-Portfolio</title>
     <link rel="stylesheet" href="iframe.css">
+    <link rel="stylesheet" href="formation.css">
 </head>
 <body>
     <iframe src="header.html"></iframe>
-    <div>
-        <img src="images/IUT.png" alt="IUT photo">
-        <div>
-            <h2>2023-2026</h2>
-            <p>Trois années au sein du BUT Informatique, Université Savoie Mont Blanc - IUT d'Annecy</p>
+    
+    <div id="formation-container">
+        <h1>Mon Parcours Académique</h1>
+        
+        <div class="formation-card">
+            <div class="formation-timeline">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+            </div>
+            
+            <div class="formation-content">
+                <img src="images/IUT.png" alt="IUT photo" class="formation-image">
+                
+                <div class="formation-text">
+                    <h2 class="formation-date">2023 - 2026</h2>
+                    <h3 class="formation-title">BUT Informatique</h3>
+                    <p class="formation-school">Université Savoie Mont Blanc - IUT d'Annecy</p>
+                    <div class="formation-details">
+                        <p><strong>Matières marquantes:</strong></p>
+                        <ul class="courses-list">
+                            <li><a href="Atouts.html">Développement Web et Mobile</a></li>
+                            <li><a href="Atouts.html">Bases de Données</a></li>
+                            <li><a href="Atouts.html">Programmation Orientée Objet</a></li>
+                            <li><a href="Atouts.html">Architecture des Systèmes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>Matières marquantes : </p>
-        </div>
-    </div>
 
-    <div>
-        <img src="images/Lycee.png" alt="Lycee Photo">
-        <div>
-            <h2>2023</h2>
-            <p>Baccalauréat STI2D spécialité SIN (Système de l'Information et du Numérique), mention Assez Bien, Lycée Saint-Etienne, Sens</p>
+        <div class="formation-card">
+            <div class="formation-timeline">
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="formation-content">
+                <img src="images/Lycee.png" alt="Lycee Photo" class="formation-image">
+                
+                <div class="formation-text">
+                    <h2 class="formation-date">2023</h2>
+                    <h3 class="formation-title">Baccalauréat STI2D</h3>
+                    <p class="formation-school">Lycée Saint-Étienne, Sens</p>
+                    <p class="formation-speciality"><strong>Spécialité:</strong> Système de l'Information et du Numérique (SIN)</p>
+                    <p class="formation-mention"><strong>Mention:</strong> Assez Bien</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="iframe.css">
     <link rel="stylesheet" href="carousel.css">
-    <title>E-portfolio</title>
-</head>
+    <link rel="stylesheet" href="loisirs.css">
+    <title>Mes Loisirs - E-Portfolio</title>
     <script src="carousel.js" defer></script>
+</head>
 <body>
-    <iframe src="header.html"></iframe>
-    <div class="carousel">
-        <button class="carousel-btn prev">&#8592;</button>
-
-        <div class="carousel-track">
-            <div class="carousel-item active">
-                <img src="images/games.png" alt="first photo">
-            </div>
-            <div class="carousel-item">
-                <img src="images/Ado.png" alt="first photo">
-            </div>
-            <div class="carousel-item">
-                <img src="images/histoire.png" alt="first photo">
-            </div>
-        </div>
-
-        <button class="carousel-btn next">&#8594;</button>
-    </div>
-    <p id="carousel-caption" class="carousel-caption" arial-live="polite"></p>
+    <iframe loading="lazy" src="header.html"></iframe>
     
+    <div id="loisirs-container">
+        <h1>Mes Loisirs & Passions</h1>
+        
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <button class="carousel-btn prev" aria-label="Image précédente">&#8592;</button>
+                <div class="carousel-track">
+                    <div class="carousel-item active">
+                        <img src="images/games.png" alt="Jeux vidéo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Ado.png" alt="Anime/Manga">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/histoire.png" alt="Histoire">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/animation.png" alt="Animation">
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Image suivante">&#8594;</button>
+            </div>
+
+            <div id="carousel-caption" class="carousel-caption" aria-live="polite"></div>
+        </div>
+    </div>
 </body>
 </html>
