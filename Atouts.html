@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Atouts</title>
+    <link rel="stylesheet" href="iframe.css">
+    <link rel="stylesheet" href="atouts.css">
+
+    <script src="atouts.js" defer></script>
+</head>
+<body>
+    <iframe src="header.html"></iframe>
+    
+    <div id="atouts-container">
+        <h1>Mes Atouts</h1>
+        
+        <div class="atout-buttons">
+            <button class="atout active" data-section="informatique">Informatiques</button>
+            <button class="atout" data-section="langues">Langues Étrangères</button>
+            <button class="atout" data-section="savoir-etre">Savoir Être</button>
+        </div>
+
+        <div id="informatique" class="section active">
+            <h2>Informatique</h2>
+            <ul>
+                <li>
+                    <strong>Langages informatiques:</strong>
+                    <ul>
+                        <li>C#: Niveau avancé (Création de jeux vidéos avec Unity, applications Windows, divers projets scolaires)</li>
+                        <li>HTML/JS /PHP: Niveau intermédiaire (Création de sites web)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Framework/Logiciel:</strong>
+                    <ul>
+                        <li>.NET: Niveau avancé (Utilisation de divers outils de la suite .NET pour des applications Windows et web)</li>
+                        <li>Laravel: Niveau intermédiaire (Création d'applications web avec PHP)</li>
+                        <li>Vue.Js: Niveau intermédiaire (Création d'applications web avec JavaScript)</li>
+                        <li>Unity: Niveau débutant (Création de jeux vidéos 3D, utilisation de C# pour le scripting)</li>
+                        <li>Phazer: Niveau débutant (Création de jeux vidéos 2D, utilisation de JS pour le scripting)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Base de données:</strong>
+                    <ul>
+                        <li>Postgresql: Niveau intermédiaire (Création de bases de données, insertion et gestion de données)</li>
+                        <li>Mongodb: Niveau débutant (Création de bases de données NoSQL, gestion de documents, insertion de données, requêtage simple)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="langues" class="section">
+            <h2>Langues Étrangères</h2>
+            <ul>
+                <li>Anglais: Niveau B2 (Cambridge English Certificate, compréhension professionnelle, facilité de communication et écriture avec peu de fautes)</li>
+                <li>Espagnol: Niveau A2 (Compréhension et communication simple)</li>
+                <li>Portugais: Niveau A1 (Compréhension et communication de phrase du quotidien)</li>
+                <li>Japonais: Niveau A0 (Compréhension minime, difficulté dans la communication et l'écriture)</li>
+            </ul>
+        </div>
+
+        <div id="savoir-etre" class="section">
+            <h2>Savoir Être</h2>
+            <ul>
+                <li>Ponctuel: Tente d'arriver à l'heure/en avance constamment et rendre son travail dans les temps</li>
+                <li>Calme: Gestion du stress et des situations difficiles</li>
+                <li>Travail en équipe: À l'aise pour travailler en groupe, savoir écouter</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

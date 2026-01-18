@@ -6,6 +6,7 @@ const prevBtn = document.querySelector(".prev");
 const captionEl = document.getElementById("carousel-caption");
 
 let index = 0;
+let slideWidth = 0;
 
 const captions =
 [
@@ -26,11 +27,19 @@ function updateCaption() {
 
 
 function updateCarousel() {
-  track.style.transform = `translateX(-${index * 100}%)`;
+  track.style.transform = `translateX(-${index * slideWidth}%)`;
   updateCaption();
 }
 
 if (track && slides.length && nextBtn && prevBtn) {
+  // Définir la largeur du track et de chaque slide
+  slideWidth = 100 / slides.length;
+  track.style.width = `${slides.length * 100}%`;
+  
+  slides.forEach(slide => {
+    slide.style.width = `${slideWidth}%`;
+  });
+  
   nextBtn.addEventListener("click", () => {
     index = (index + 1) % slides.length;
     updateCarousel();
